@@ -1,6 +1,7 @@
 import { ArrowLeft } from "lucide-react";
 import { ArrowRight } from "lucide-react";
 import { EmblaCarousel } from "./carousel";
+import { BenefitsCard } from "./benefitsCard";
 
 const videoUrls = [
   "https://s3viva.s3.us-east-2.amazonaws.com/assets/video01.mp4",
@@ -24,6 +25,32 @@ export function Benefits() {
         </div>
       </div>
       <EmblaCarousel videos={videoUrls} />
+      <div className="flex mt-4 gap-2 overflow-x-scroll">
+        <BenefitsCard
+          icon="/person-icon.svg"
+          title="Atendimento Humanizado"
+          description="Receba atendimento personalizado e acolhedor, sempre."
+          alt="icone"
+        />
+        <BenefitsCard
+          icon="/plans-icon.svg"
+          title="Planos Acessíveis"
+          description="Escolha entre planos gratuitos e premium, a partir de R$0,19 por dia."
+          alt="icone"
+        />
+        <BenefitsCard
+          icon="/networking-icon.svg"
+          title="Rede Credenciada"
+          description="Acesse uma ampla rede de clínicas, hospitais e especialistas."
+          alt="icone"
+        />
+        <BenefitsCard
+          icon="/percent-icon.svg"
+          title=" Descontos Exclusivos"
+          description="Aproveite descontos em exames, consultas e medicamentos."
+          alt="icone"
+        />
+      </div>
     </section>
   );
 }
