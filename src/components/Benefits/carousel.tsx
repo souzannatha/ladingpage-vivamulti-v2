@@ -1,16 +1,16 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, ReactNode } from "react";
 import { EmblaOptionsType } from "embla-carousel";
 import useEmblaCarousel from "embla-carousel-react";
 import AutoScroll from "embla-carousel-auto-scroll";
 
 type PropType = {
-  videos: string[];
   options?: EmblaOptionsType;
+  children: ReactNode;
 };
 
-export const EmblaCarousel: React.FC<PropType> = ({ videos, options }) => {
+export const EmblaCarousel: React.FC<PropType> = ({ options, children }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel(
     {
       ...options,
@@ -35,19 +35,7 @@ export const EmblaCarousel: React.FC<PropType> = ({ videos, options }) => {
   return (
     <div className="embla relative overflow-hidden mt-10">
       <div className="embla__viewport w-full overflow-hidden" ref={emblaRef}>
-        <div className="embla__container flex gap-3">
-          {videos.map((videoSrc, index) => (
-            <div className="embla__slide flex-none w-80 h-60" key={index}>
-              <video
-                className="w-full h-full object-cover rounded-lg"
-                src={videoSrc}
-                autoPlay
-                muted
-                loop
-              />
-            </div>
-          ))}
-        </div>
+        <div className="embla__container flex gap-3">{children}</div>
       </div>
     </div>
   );
