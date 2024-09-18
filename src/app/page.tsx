@@ -1,3 +1,9 @@
+import { Benefits } from "@/components/Benefits";
+
 export default function Home() {
-  return <div></div>;
+  return (
+    <div>
+      <Benefits />
+    </div>
+  );
 }

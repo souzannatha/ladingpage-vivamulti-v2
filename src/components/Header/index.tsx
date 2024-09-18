@@ -17,7 +17,7 @@ export function Header() {
 
   return (
     <header
-      className="bg-sky-700 h-[800px] relative"
+      className="h-[800px] relative overflow-hidden"
       style={{ backgroundImage: `url("/background-image.svg")` }}
     >
       <nav className="flex items-center justify-between px-4 py-5 mb-10">
@@ -78,13 +78,15 @@ export function Header() {
           </div>
         </div>
       </div>
-      <Image
-        className="mt-[75px]"
-        src="/family-header.svg"
-        width={800}
-        height={800}
-        alt="Imagem de uma familia"
-      />
+      <div className="relative w-full h-full overflow-hidden">
+        <Image
+          className="mt-[75px] w-full h-auto object-cover"
+          src="/family-header.svg"
+          alt="Imagem de uma familia"
+          width={800}
+          height={800}
+        />
+      </div>
     </header>
   );
 }
