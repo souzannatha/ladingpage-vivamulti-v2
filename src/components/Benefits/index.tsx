@@ -24,8 +24,21 @@ export function Benefits() {
           <ArrowRight className="text-blueCustom-blue01" />
         </div>
       </div>
-      <EmblaCarousel videos={videoUrls} />
-      <div className="flex mt-4 gap-2 overflow-x-scroll">
+      <EmblaCarousel options={{}}>
+        {videoUrls.map((videoSrc, index) => (
+          <div className="embla__slide flex-none w-80 h-60 gap-4" key={index}>
+            <video
+              className="w-full h-full object-cover rounded-lg"
+              src={videoSrc}
+              autoPlay
+              muted
+              loop
+            />
+          </div>
+        ))}
+      </EmblaCarousel>
+
+      <div className="flex mt-4 gap-2 overflow-x-scroll overflow-y-hidden">
         <BenefitsCard
           icon="/person-icon.svg"
           title="Atendimento Humanizado"
