@@ -1,6 +1,7 @@
 import { AccreditedNetworks } from "@/components/AccreditedNetworks";
 import { Benefits } from "@/components/Benefits";
 import { SectionDownload } from "@/components/SectionDownload";
+import { Testimonials } from "@/components/Testimonials";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Benefits />
       <AccreditedNetworks />
       <SectionDownload />
+      <Testimonials />
     </div>
   );
 }
