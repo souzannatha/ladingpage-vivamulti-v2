@@ -10,8 +10,16 @@ export function SectionDownload() {
         benefícios do Cartão Viva Multi!
       </h2>
       <div className="flex justify-between items-center mt-4 w-64 gap-2">
-        <CardDownload plataform="Apple Store" icon="/apple-icon.svg" />
-        <CardDownload plataform="Google Play" icon="/googleplay-icon.svg" />
+        <CardDownload
+          plataform="Apple Store"
+          icon="/apple-icon.svg"
+          variant="default"
+        />
+        <CardDownload
+          plataform="Google Play"
+          icon="/googleplay-icon.svg"
+          variant="default"
+        />
       </div>
       <div className="relative mt-8">
         <div className="flex justify-center items-center">
