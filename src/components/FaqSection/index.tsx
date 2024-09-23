@@ -45,15 +45,15 @@ export function FaqSection() {
                 Quais são os planos disponíveis?
               </AccordionTrigger>
               <AccordionContent>
-                O cartão oferece acesso a uma rede de clínicas e hospitais, além
-                de descontos em consultas e exames.
+                Oferecemos dois planos: o Plano Individual, destinado a uma
+                única pessoa, e o Plano Familiar, que permite a inclusão de até
+                3 dependentes, sejam eles cônjuges, filhos, pais ou sogros.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
               <AccordionTrigger>Como faço para me cadastrar?</AccordionTrigger>
               <AccordionContent>
-                O cartão oferece acesso a uma rede de clínicas e hospitais, além
-                de descontos em consultas e exames.
+                Instale nosso aplicativo na App Store ou na Google Play
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
@@ -61,8 +61,10 @@ export function FaqSection() {
                 Existe um limite de uso do cartão?
               </AccordionTrigger>
               <AccordionContent>
-                O cartão oferece acesso a uma rede de clínicas e hospitais, além
-                de descontos em consultas e exames.
+                Não há um limite de uso para o cartão Viva Multi + Saúde. Os
+                titulares podem usufruir dos descontos em serviços de saúde
+                quantas vezes precisarem, respeitando as condições de cada
+                serviço ou prestador credenciado.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-5">
@@ -70,8 +72,10 @@ export function FaqSection() {
                 Posso usar o cartão após a adesão?
               </AccordionTrigger>
               <AccordionContent>
-                O cartão oferece acesso a uma rede de clínicas e hospitais, além
-                de descontos em consultas e exames.
+                Após a confirmação da adesão e processamento do seu pagamento,
+                você receberá uma confirmação que permite começar a usar o
+                cartão Viva Multi + Saúde imediatamente em nossa rede
+                credenciada.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
