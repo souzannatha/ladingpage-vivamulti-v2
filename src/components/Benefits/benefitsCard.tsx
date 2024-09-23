@@ -14,7 +14,7 @@ export function BenefitsCard({
   alt,
 }: BenefitsCardProps) {
   return (
-    <div className="w-56 h-56 p-8 bg-gradient-to-t from-white to-blueCustom-blue04 rounded-md flex flex-col items-start justify-start">
+    <div className="w-56 h-56 p-8 bg-gradient-to-t from-white to-blueCustom-blue04 rounded-md flex flex-col items-start justify-start xl:w-72 xl:h-80">
       <div className="mt-1">
         <Image
           src={icon}
@@ -24,10 +24,10 @@ export function BenefitsCard({
           className="object-contain"
         />
       </div>
-      <h3 className="font-bold text-xl text-blueCustom-blue01 text-left mt-2">
+      <h3 className="font-bold text-xl text-blueCustom-blue01 text-left mt-2 xl:text-3xl">
         {title}
       </h3>
-      <p className="font-medium text-sm text-blueCustom-blue05 text-left mt-3">
+      <p className="font-medium text-sm text-blueCustom-blue05 text-left mt-3 xl:text-lg">
         {description}
       </p>
     </div>

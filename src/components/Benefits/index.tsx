@@ -12,10 +12,12 @@ const videoUrls = [
 
 export function Benefits() {
   return (
-    <section className="px-4 py-5 mt-20">
-      <p className="text-sm text-blueCustom-blue05">Benefícios Exclusivos</p>
-      <div className="flex items-end">
-        <h2 className="text-3xl text-blueCustom-blue01 font-bold">
+    <section className="px-4 py-5 mt-20 xl:px-32">
+      <p className="text-sm text-blueCustom-blue05 xl:font-medium xl:text-xl">
+        Benefícios Exclusivos
+      </p>
+      <div className="flex items-end xl:items-center xl:justify-between">
+        <h2 className="text-3xl text-blueCustom-blue01 font-bold xl:text-5xl">
           Por que escolher o Cartão Viva Multi
         </h2>
         <div className="flex gap-1">
@@ -26,7 +28,10 @@ export function Benefits() {
       </div>
       <EmblaCarousel options={{}}>
         {videoUrls.map((videoSrc, index) => (
-          <div className="embla__slide flex-none w-80 h-60 gap-4" key={index}>
+          <div
+            className="embla__slide flex-none w-80 h-60 gap-4 xl:w-[890px] xl:h-[570px]"
+            key={index}
+          >
             <video
               className="w-full h-full object-cover rounded-lg"
               src={videoSrc}
@@ -38,7 +43,7 @@ export function Benefits() {
         ))}
       </EmblaCarousel>
 
-      <div className="flex mt-4 gap-2 overflow-x-scroll overflow-y-hidden">
+      <div className="flex mt-4 gap-2 overflow-x-scroll overflow-y-hidden xl:gap-20 xl:justify-center">
         <BenefitsCard
           icon="/person-icon.svg"
           title="Atendimento Humanizado"
