@@ -92,17 +92,22 @@ export function Header() {
             Descubra um novo jeito de cuidar da sua saúde com valores acessíveis
             e atendimento humanizado.
           </p>
-          <div className="flex items-center w-60 h-14 p-3 rounded-lg bg-white mt-6 xl:w-72 xl:h-16">
-            <CurvedFace />
-            <div className="ml-3">
-              <p className="text-sm text-blueCustom-blue01 xl:text-base">
-                Cadastre-se agora
-              </p>
-              <p className="text-sm font-bold text-blueCustom-blue01 xl:text-lg">
-                e seja o primeiro a saber!
-              </p>
+          <a
+            href="https://app.vivamultisaude.com.br/mobile-app"
+            target="_blank"
+          >
+            <div className="flex items-center w-60 h-14 p-3 rounded-lg bg-white mt-6 xl:w-72 xl:h-16">
+              <CurvedFace />
+              <div className="ml-3">
+                <p className="text-sm text-blueCustom-blue01 xl:text-base">
+                  Cadastre-se agora
+                </p>
+                <p className="text-sm font-bold text-blueCustom-blue01 xl:text-lg">
+                  e seja o primeiro a saber!
+                </p>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
       <div className="relative w-full h-full ">
@@ -120,7 +125,10 @@ export function Header() {
           width={530}
           height={530}
         />
-        <a href="https://api.whatsapp.com/send?phone=554337721333">
+        <a
+          href="https://api.whatsapp.com/send?phone=554337721333"
+          target="_blank"
+        >
           <Image
             src="/icon-wpp.svg"
             alt="Imagem do whatsapp"

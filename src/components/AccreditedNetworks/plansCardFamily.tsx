@@ -19,8 +19,9 @@ export function PlansCardFamily() {
       <h3 className="text-xl font-medium text-blueCustom-blue01 mt-2">Plano</h3>
       <h2 className="text-4xl font-bold text-blueCustom-blue01">Familiar</h2>
       <p className="text-xl font-medium text-blueCustom-blue05 mt-6">
-        A partir de <span className="font-bold">R$0,19</span> por dia. Consultas
-        a <span className="font-bold">R$59,90</span>, acesso a{" "}
+        A partir de <span className="font-bold">R$19,90</span> por mês.
+        Consultas a <span className="font-bold">R$59,90</span>, acesso a{" "}
+        <span className="font-bold">concierge 24h,</span>{" "}
         <span className="font-bold">hospitais 24h</span> e descontos.
       </p>
       <div className="flex justify-center mt-8">
