@@ -6,10 +6,10 @@ import { PlansCardIndividual } from "./plansCardIndividual";
 export function AccreditedNetworks() {
   const images = [
     "/hospital-icon.svg",
-    "/hospital-icon.svg",
-    "ultramed-icon.svg",
     "ultramed-icon.svg",
     "alphasonic-icon.svg",
+    "/hospital-icon.svg",
+    "ultramed-icon.svg",
     "alphasonic-icon.svg",
   ];
 

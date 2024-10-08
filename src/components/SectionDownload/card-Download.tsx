@@ -3,13 +3,13 @@ import Image from "next/image";
 interface CardDownloadProps {
   plataform: string;
   icon: string;
-  variant?: "default" | "outline"; // Define a variante opcional
+  variant?: "default" | "outline";
 }
 
 export function CardDownload({
   plataform,
   icon,
-  variant = "default", // Define a variante padrão como "default"
+  variant = "default",
 }: CardDownloadProps) {
   return (
     <div

@@ -49,7 +49,7 @@ export function Header() {
           className="relative z-50 block p-2 xl:hidden justify-end "
           onClick={toggleMenu}
         >
-          <div className="space-y-2">
+          <div className="hidden space-y-2">
             <span
               className={`block w-4 h-0.5 transition-transform ${
                 isOpen
